@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    
+
+<head>
+    <meta charset="utf-8">
+    <title>Merge Sort </title>
+    <link rel="stylesheet" href="MergeSort.css">
+    <script src="MergeSort.js"></script>
+<meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+<meta name = "viewport" content="width = device-width",initial-scale = 1.0>
+</head>
+    
+    
+    <link href= "icon.png" rel="icon"type="image/ico">
+    <!--Body----->
+    <body>
+        
+        
+    <div class="header">
+    <!--Container------------------>
+    <div class="container">
+        
+    <!--Nav Bar--->
+    <div class="navbar">
+
+        <nav>
+            <ul>
+            <li><a href = "#theory" type="button">Theory</a></li> 
+            <li><a href = "#flow-chart" type="button">Flow Chart</a></li>
+            <li><a href = "#try" type="button">Try </a></li>  
+            </ul>
+        </nav>    
+    </div>
+    <!--Nav Bar Ends---->
+        
+        <!-- Theory --->
+        <div class="theory" id="theory">
+        <h1 class="title">Merge Sort</h1>
+            <div class='content'>
+            <p>Merge Sort is one of the most popular sorting algorithms that is based on the principle of Divide and Conquer Algorithm.<br>
+        Here, a problem is divided into multiple sub-problems. Each sub-problem is solved individually. Finally, sub-problems are combined to form the final solution.<br><br><b>Divide and Conquer Strategy:</b>
+        <br>Using the Divide and Conquer technique, we divide a problem into subproblems. When the solution to each subproblem is ready, we 'combine' the results from the subproblems to solve the main problem.<br>
+        <br>Suppose we had to sort an array A. A subproblem would be to sort a sub-section of this array starting at index p and ending at index r, denoted as A[p..r].<br><b>Divide&nbsp;&nbsp;&nbsp;&nbsp;:</b>If q is the half-way point between p and r, then we can split the subarray A[p..r] into two arrays A[p..q] and A[q+1, r].     
+        <br><b>Conquer:</b>In the conquer step, we try to sort both the subarrays A[p..q] and A[q+1, r]. If we haven't yet reached the base case, we again divide both these subarrays and try to sort them.<br><b>Combine:</b>
+        When the conquer step reaches the base step and we get two sorted subarrays A[p..q] and A[q+1, r] for array A[p..r], we combine the results by creating a sorted array A[p..r] from two sorted subarrays A[p..q] and A[q+1, r].<br></p>
+
+        </div>
+
+        </div>
+        <!------Theory Ends-->
+        
+        <!--Flow Chart-->
+        <div class="flow-chart" id = "flow-chart">
+            <h1><br>Flow Chart:</h1>
+             <div class="image-container">
+                <img src="flowchart.png"> 
+                <img src="Illustration.png"> 
+            </div>
+        </div>
+        <!-- Flow Chart Ends--->
+        
+        <!-- Algo Working Begins--->
+        <div class="try" id="try">
+        <h1><br>Try By Giving Input:</h1>
+            
+        <!-- Wrapper--->
+         <div class="wrapper">
+             
+        <!-- Input Container --->
+          <div class="input-container" id='input-container'>
+            <label for="number-input" class='input-label'>Enter Numerical Values:</label>
+                <input type="text" id="number-input" placeholder="Enter Space separated Numbers..." name="number-input"  class='number-input-field'> 
+              <p><span style='color:red;background-color: white;margin-left:38%;'>Click OK After Entering Numbers.</span></p>
+        <!--Button Container---->    
+        <div id='button-container' class='button-container'>
+            <button id='submit-button' class='submit-button' onclick="changeUnsortedLabelText()">OK</button>
+            <button id='sort-button' class='sort-button' onclick="sort()">Sort Numbers</button>
+      
+        </div>
+        <!--Button Container Ends---->
+    </div>
+    <!-- Input Container Ends---->
+            <!-- Unsorted Text Label --> 
+            <div class='input-label-container' id='input-label-container'>
+                <label for="input-label" id='input-label'><h2>Unsorted Numbers:</h2></label>
+                
+            </div>
+            <!-- Unsorted text Label Ends--->
+             
+        <!--Sorted Label Text -->
+            <div class='sorted-label-container' id='sorted-label-container'>
+                <label for="sorted-label" id='sorted-label'></label>  
+            </div>
+        <!-- Sorted Label Text Ends--->           
+            
+        </div>
+        <!-- Wrapper Ends---->
+        </div>
+        <!-- Algo working Ends-->
+        
+        </div>
+        
+        <!--Container Ends--->     
+        </div>
+       
+     
+    </body>
+
+    <!-- Body Ends------------>

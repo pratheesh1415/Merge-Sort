@@ -1,0 +1,171 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Sansita Swashed', cursive;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+html
+{
+    scroll-behavior: smooth;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul
+{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li
+{
+    display: inline-block;
+    
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
+    
+}
+nav ul li a:hover
+{
+    background: #000000;
+    border-radius: 20px;
+}
+p
+{
+    color: black;
+    font-size: 18px;
+}
+.container
+{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.button
+{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding:8px 30px;
+    margin: 30px 0 0 20px;
+    border-radius: 30px;
+}
+.button:hover
+{
+    transform: scale(1.1);
+}
+
+.header
+{
+    background: radial-gradient(yellow,#f06d06);
+}
+
+
+.image-container{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+img{
+    width: 600px;
+    height: 500px;
+    margin:2px;
+    
+    
+}
+
+#sorted-label,#input-label{
+    font-size: 24px;
+    
+}
+#sorted-label{
+    min-height: 500px;
+}
+
+
+
+.wrapper .button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    padding-top: 16px;
+}
+
+.wrapper .input-container{
+    padding:10px;
+    color: white;
+    border-radius: 16px;
+    position: relative ;
+    display: block;
+    margin: 10px 10px 10px 10px;
+    
+}
+.input-label{
+        font-size: 26px;
+        
+}
+.submit-button,.sort-button{
+    padding: 4px 10px 4px 10px;
+    font-size: 26px;
+    font-weight: 300;
+    border-radius: 12px;
+    margin:0px 10px 0px 10px;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    
+    
+}
+.submit-button:hover,.sort-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+input[type=text]{
+	border-radius:10px;
+	font-size:20px;
+	height:60px;
+	outline:none;
+	padding:10px;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+	
+}
+.button-container{
+    padding:20px;
+}
+
+.input-label-container,.sorted-label-container{
+    padding:10px;
+}
+
+
+
+
+
+
+
